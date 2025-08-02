@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raksha Bandhan Greeting Card</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(#ffebee, #ffe0f0);
+      text-align: center;
+      color: #d32f2f;
+    }
+
+    .card {
+      max-width: 400px;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+
+    .card h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #c2185b;
+    }
+
+    .card p {
+      font-size: 1.1rem;
+    }
+
+    .rakhi-img {
+      width: 200px;
+      height: auto;
+      margin: 1rem 0;
+      border-radius: 50%;
+      box-shadow: 0 0 10px #e91e63;
+    }
+
+    .buttons {
+      margin: 1rem 0;
+    }
+
+    .buttons button {
+      padding: 0.6rem 1.2rem;
+      margin: 0 0.5rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      background-color: #e91e63;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .buttons button:hover {
+      background-color: #c2185b;
+    }
+
+    .portfolio {
+      margin-top: 2rem;
+    }
+
+    .portfolio h2 {
+      color: #d81b60;
+    }
+
+    .portfolio img {
+      width: 90%;
+      max-width: 300px;
+      margin: 0.5rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #f06292;
+    }
+
+    audio {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>💖 Happy Raksha Bandhan 💖</h1>
+    <img src="images/Rakhi.jpg" alt="rakhi" class="rakhi-img" />
+    <p>Wishing you a bond filled with love, laughter, and unforgettable memories. Happy Rakhi!</p>
+
+    <div class="buttons">
+      <button onclick="playMusic()">Play Music</button>
+      <button onclick="pauseMusic()">Stop Music</button>
+    </div>
+
+    <audio id="bgMusic" loop>
+      <source src="Audio/Sister song.mp3" type="audio/mp3" />
+    </audio>
+
+    <div class="portfolio">
+      <h2>📸 Our Memories</h2>
+      <img src="images/Khushi1.jpg" alt="sibling 1" />
+      <img src="images/Adi and Khushi.jpg" alt="sibling 2" />
+    </div>
+  </div>
+
+  <script>
+    const music = document.getElementById("bgMusic");
+
+    function playMusic() {
+      music.play();
+    }
+
+    function pauseMusic() {
+      music.pause();
+    }
+  </script>
+
+</body>
+</html>
